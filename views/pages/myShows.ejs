@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs',title="MYSHOWS" ) %>
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+        <div class="container">
+            <% data.results.forEach(element=> {%>
+                <figure>
+                    <img id="img" src=<%=`https://image.tmdb.org/t/p/w500${element.poster_path}`%>>
+                    <figcaption id="captions">
+                        <%= element.title %>
+                            <br>
+                            <%= "⭐️" %>
+                                <%= element.vote_average %>
+                                    <a href=<%=`/moviesDetails/${element.id}`%>>More Info</a>
+                    </figcaption>
+
+                </figure>
+
+                <%}); %>
+        </div>
+</body>
+
+</html>

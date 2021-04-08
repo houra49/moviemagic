@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs',title="MYSHOWS" ) %>
+</head>
+
+<body>
+    <header id="header">
+        <h2>
+            <a href="/" class="logo">MOVIEMAGIC</a>
+        </h2>
+        <div class="searchBox">
+            <input class="searchInput" type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div>
+        <button class="add-btn">Add Show</button>
+    </header>
+    <section id="buttons">
+        <button class="genres-btn"><a href="/action" id="genres-anchor">Action</a></button>
+        <button class="genres-btn"><a href="/crime" id="genres-anchor">Crime</a></button>
+        <button class="genres-btn"><a href="/comedy" id="genres-anchor">Comedy</a></button>
+        <button class="genres-btn"><a href="/horror" id="genres-anchor">Horror</a></button>
+        <button class="genres-btn"><a href="/music" id="genres-anchor">Music</a></button>
+    </section>
+</body>
+
+</html>

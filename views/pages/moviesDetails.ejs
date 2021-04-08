@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs',title="MYSHOWS" ) %>
+</head>
+
+<body>
+    <section class="container-movies">
+        <div class="container-movies-div">
+            <a href="/" class="home-btn">MOVIEMAGIC</a>
+            <div class="searchBox" id="container-movies-searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Search">
+                <button class="searchButton" href="#">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </button>
+            </div>
+        </div id="container-movies-details">
+
+        <div>
+            <br>
+            <img id="img-details" src=<%=`https://image.tmdb.org/t/p/w500${data.backdrop_path}`%>>
+            <h4>
+                <%= data.title %>
+            </h4>
+            <h4>
+                <%= data.release_date%>
+                    Released
+            </h4>
+            <h4>
+                <% data.genres.forEach(element=> { %>
+                    <button id="container-movies-btn">
+                        <%= element.name %>
+                    </button>
+                    <% }) %>
+
+            </h4>
+            <br>
+            <h4>Plot Summary</h4>
+            <p>
+                <%= data.overview%>
+            </p>
+        </div>
+
+    </section>
+</body>
+
+</html>

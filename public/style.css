@@ -1,0 +1,150 @@
+body{
+    margin:0;
+}
+#header{
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+.logo{
+    text-decoration: none;
+    color:#2f3640;
+}
+/*****************************Search-Button*******************************************/
+.searchBox {
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.searchBox:hover > .searchInput {
+    width: 140px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+  font-size: .5em;
+}
+.searchButton {
+    color: white;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+/*****************************Search-Button*******************************************/
+.add-btn{
+    border-radius: 15px;
+    background-color:#2f3640;
+    border:#2f3640 solid 1px;color:#fff;
+    padding: 10px 15px;
+}
+#buttons{
+    margin-top:10vh;
+    display:flex;
+    justify-content:space-evenly;
+}
+.genres-btn{
+    background-color:#2f3640;
+    border:#2f3640 solid 1px;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+#genres-anchor{
+    text-decoration: none;
+    color:#fff;
+}
+.genres-btn:hover{
+    background-color:#fff;
+}
+#genres-anchor:hover{
+    color:#2f3640;
+}
+#img{
+    width:25vw;
+    height:60vh;
+    border-radius:50px;
+    box-shadow:5px 5px 5px 5px #2f3640;
+    opacity:1;
+}
+#img:hover{
+    opacity: 0.6;
+    width:27vw;
+    height:63vh;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,3fr);
+    margin:5% 2% 0 2% ;
+    text-align: center;
+}
+#captions{
+    margin-top:6%;
+}
+/***********************************************************************************/
+/********************************MoviesDetails**************************************/
+.container-movies{
+    height:150vh;
+}
+.home-btn{
+    text-decoration: none;
+    color:#2f3640;
+    padding-left: 20vw;
+    font-size:1.8em;
+}
+#img-details{
+    width:90vw;
+    height:700px;
+    border-radius:20px;
+    margin:0 5%;
+    box-shadow:5px 5px 5px 5px #2f3640;
+}
+.container-movies-div{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+h4,p{
+    margin:2% 5%;
+}
+#container-movies-btn{
+    background-color:#2f3640;
+    border:#2f3640 solid 1px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color:#fff;
+}
+#container-movies-searchBox{
+   margin-left: 30%;
+   margin-top: -4%;
+}
