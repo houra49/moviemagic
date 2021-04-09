@@ -46,3 +46,15 @@ app.get('/genre', (req, res) => {
         })
 
 })
+app.get('/search', (req, res) => {
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&language=en-US&page=1&include_adult=false`)
+        .then(result => result.json())
+        .then(data => {
+            //res.json(data)
+            res.render('pages/search', {
+                title: 'MYSEARCH ',
+                data: data,
+            })
+        })
+
+})

@@ -10,19 +10,21 @@
         <div class="container">
             <% data.results.forEach(element=> {%>
                 <figure>
-                    <img id="img" src=<%=`https://image.tmdb.org/t/p/w500${element.poster_path}`%>>
+                    <a href=<%=`/moviesDetails/${element.id}`%>><img id="img"
+                            src=<%=`https://image.tmdb.org/t/p/w500${element.poster_path}`%>></a>
                     <figcaption id="captions">
                         <%= element.title %>
                             <br>
                             <%= "⭐️" %>
                                 <%= element.vote_average %>
-                                    <a href=<%=`/moviesDetails/${element.id}`%>>More Info</a>
+                                    <br>
                     </figcaption>
 
                 </figure>
 
                 <%}); %>
         </div>
+        <script src="/main.js"></script>
 </body>
 
 </html>

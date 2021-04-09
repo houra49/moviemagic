@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 body{
     margin:0;
+    font-family: 'New Tegomin', serif;
 }
 #header{
     display:flex;
@@ -9,6 +11,7 @@ body{
 .logo{
     text-decoration: none;
     color:#2f3640;
+    font-size: 2em;
 }
 /*****************************Search-Button*******************************************/
 .searchBox {
